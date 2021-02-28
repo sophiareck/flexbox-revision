@@ -213,6 +213,8 @@ img{
   width: 46%;
   border-color: #290661;
   border-style: solid;
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
 #genderCovid{
   width: 46%;
@@ -222,6 +224,8 @@ img{
   text-align: center;
   border-color: #290661;
   border-style: solid;
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
 
 #genderLinks{
@@ -303,6 +307,8 @@ img{
   width: 46%;
   border-color: #290661;
   border-style: solid;
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
 #raceCovid{
   width: 46%;
@@ -312,6 +318,8 @@ img{
   text-align: center;
   border-color: #290661;
   border-style: solid;
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
 
 #raceLinks{
