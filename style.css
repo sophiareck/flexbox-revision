@@ -5,64 +5,96 @@ body{
   margin: 0px;
   font-family: georgia;
   background-color: #FFFFFF;
-   overflow-x: hidden;
+  overflow-x: hidden;
+  font-size: 1vw;
 }
 
 #mainContainer {
+display: flex;
+flex-direction: column;
 padding-top: 0px;
 margin-top: 0px;
-margin-bottom: 10px;
+margin-bottom: 0px;
+align-items: center;
+justify-content: center;
+}
+#topStuff{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #menu{
   margin: 0;
-  display: inline-block;
-  height:100px;
-  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  height:5vw;
+  width: 100vw;
   background-color: #290661;
   position: fixed;
   color: #EEE6FB;
 }
+#menuTitle{
+  width: 40%;
+  display: flex;
+  padding-left: 1vw;
+}
 
 #menuLinks{
-  position: absolute;
-  bottom: 5px;
+  display:inline-flex;
+  width: 60%;
+  flex-grow: 2;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 3vw;
 }
 h1{
+  display: flex;
+  font-size: 2.5vw;
   margin: 0;
-  margin-left: 10px;
+  margin-left: 1vw;
   padding: 0px;
   text-shadow: 2px 2px #4B3E61;
 }
-a{
-  color: #EEE6FB;
-  background-color: #4B3E61;
-    padding: 5px 10px;
-    text-align: center;
-    font-size: 30px;
-    text-decoration: none;
-    display: inline-block;
-    margin-left: 350px;
-    margin-right: 100px;
+h2{
+  display: flex;
+  font-size: 2vw;
+  margin: 0;
+  padding: 0;
+  padding-top: .5vw;
 }
-a:link, a:visited{
+
+a{
   color: #4B3E61;
-  font-size: 20px;
+  font-size: 1.5em;
   background-color: #EEE6FB;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin-left: 100px;
-    margin-right: 100px;
+  padding: .3em .8em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+a:hover{
+  color: #EEE6FB;
+  font-size: 1.5em;
+  background-color: #4B3E61;
+  padding: .3em .8em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
 }
 
 #header {
-  height: 145px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 8vw;
   width: 92%;
-  padding-top: 90px;
-  margin-left: 50px;
-  margin-right: 50px;
-  padding-bottom: 5px;
+  padding-top: 5vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding-bottom: 1vw;
   background-color: #EEE6FB;
   border-color: #290661;
   border-style: solid;
@@ -70,32 +102,49 @@ a:link, a:visited{
   text-align: center;
 }
 #description{
-  margin: 5px;
+  display: flex;
+  font-size: 1.2em;
+  padding-bottom: 1vw;
 }
+
 #graphs{
-  background-size: cover;
-  display: inline-block;
-  margin: 20px;
-  padding: 3px;
+  width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1vw;
+  margin-bottom: 0;
+  padding: 1vw;
   text-align: center;
-  vertical-align: center;
 }
 #graph1{
   color: #290661;
-    display: inline-block;
-    padding-left: 50px;
-    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin: 1vw;
     width: 40%;
-      vertical-align: center;
-      
+    vertical-align: center;
+    border-color: #290661;
+    border-style: solid;
 }
 #graph2{
   color: #290661;
-    display: inline-block;
-        padding-left: 50px;
-        padding-right: 50px;
-        width: 40%;
-        vertical-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin: 1vw;
+    width: 40%;
+    vertical-align: center;
+    border-color: #290661;
+    border-style: solid;
 }
 img{
   max-width: 100%;
@@ -104,14 +153,27 @@ img{
 }
 
 /*Gender Page*/
+
+#genderContent{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
 #genderHeader {
-  display: inline-block;
-  height: 300px;
-  width: 92%;
-  padding-top: 90px;
-  margin-left: 50px;
-  margin-right: 50px;
-  padding-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 16vw;
+  width: 92vw;
+  padding-top: 8vw;
+  margin-left: 1vw;
+  padding-bottom: 1vw;
+  margin-bottom: 2vw;
   background-color: #EEE6FB;
   border-color: #290661;
   border-style: solid;
@@ -119,29 +181,33 @@ img{
   text-align: center;
 }
 #genderPhoto{
-  text-align: left;
-  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  display: flex;
   max-width: 33%;
-  padding-top: 20px;
-  margin: 10px;
+  margin-left: 1vw;
+  margin-bottom: 2vw;
 }
 
 #genderDescription{
-  display:inline-block;
+  display:flex;
+  flex-direction: column;
+  flex-grow: 1.3;
   max-width: 60%;
-  margin:10px;
-  font-size: 17px;
+  margin:1vw;
+  font-size: 1.5em;
   text-overflow: ellipsis;
 
 }
-#genderContent{
-  display: inline-block;
-  width: 100%;
-  text-align: center;
+#genderGraphs{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-#genderGraph{
+#genderGraph1{
   display: inline-block;
-  margin: 5px;
+  margin: 1vw;
   color: #290661;
   text-align: center;
   width: 46%;
@@ -151,7 +217,7 @@ img{
 #genderCovid{
   width: 46%;
   display: inline-block;
-  margin: 5px;
+  margin: 1vw;
   color: #290661;
   text-align: center;
   border-color: #290661;
@@ -159,33 +225,46 @@ img{
 }
 
 #genderLinks{
+  display: flex;
+  flex-direction: column;
   background-color: #EEE6FB;
   border-color: #290661;
   border-style: solid;
   color: #4B3E61;
-  width:90%;
-  height: 130px;
+  width:80%;
+  height: 7vw;
   text-align: center;
-  margin-left: 5%;
-  margin-right: 2%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
+
 .genderDonate a{
-  display: inline-block;
-  color: #290661;
-  font-size: 16px;
   text-decoration: underline;
-  margin: 10px;
 }
 
 /*race page*/
+#raceContent{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
 #raceHeader{
-  display: inline-block;
-  height: 300px;
-  width: 92%;
-  padding-top: 90px;
-  margin-left: 50px;
-  margin-right: 50px;
-  padding-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 16vw;
+  width: 92vw;
+  padding-top: 8vw;
+  margin-left: 1vw;
+  padding-bottom: 1vw;
+  margin-bottom: 2vw;
   background-color: #EEE6FB;
   border-color: #290661;
   border-style: solid;
@@ -193,29 +272,32 @@ img{
   text-align: center;
 }
 #racePhoto{
-  display: inline-block;
-  max-width: 33%;
-  padding-top: 20px;
-  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  max-width: 31%;
+  margin-bottom: 2vw;
 }
 
 #raceDescription{
-  display:inline-block;
+  display:flex;
+  flex-direction: column;
+  flex-grow: 1.3;
   max-width: 60%;
-  margin:10px;
-  font-size: 17px;
+  margin:1vw;
+  margin-right: 0;
+  font-size: 1.5em;
   text-overflow: ellipsis;
-
 }
-#raceContent{
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  margin-top: 5px;
+#raceGraphs{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-#raceGraph{
+#raceGraph1{
   display: inline-block;
-  margin: 5px;
+  margin: 1vw;
   color: #290661;
   text-align: center;
   width: 46%;
@@ -225,7 +307,7 @@ img{
 #raceCovid{
   width: 46%;
   display: inline-block;
-  margin: 5px;
+  margin: 1vw;
   color: #290661;
   text-align: center;
   border-color: #290661;
@@ -233,20 +315,21 @@ img{
 }
 
 #raceLinks{
+  display: flex;
+  flex-direction: column;
   background-color: #EEE6FB;
   border-color: #290661;
   border-style: solid;
   color: #4B3E61;
-  width:90%;
-  height: 180px;
+  width:60%;
+  height: 10vw;
   text-align: center;
-  margin-left: 5%;
-  margin-right: 2%;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
+
 .raceDonate a{
-  display: inline-block;
-  color: #290661;
-  font-size: 16px;
   text-decoration: underline;
-  margin: 10px;
 }
